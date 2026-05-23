@@ -1,57 +1,44 @@
-# ShopEase — Android eCommerce App
+# ShopEase — Portfolio Overview
 
-Academic group project (**ICT372 · King's Own Institute**) — a local eCommerce Android application with SQLite persistence, Material Design UI, and core shopping flows.
+**Academic Android project (ICT372)** · King's Own Institute — local eCommerce app with SQLite and Material Design.
+
+**This repository includes the full Android source code** (Gradle project in-repo).
+
+## My contribution (Habib Khan)
+
+- **Product Detail** screen — layout, product binding, add-to-cart
+- **Search** screen — type-ahead SQLite queries, `RecyclerView` results, navigation to detail
+- Integration with `DatabaseHelper`, cart model, and Material Design patterns
+
+## Screenshots
+
+| App overview |
+|:---:|
+| ![ShopEase Android eCommerce app](docs/screenshots/app-overview.png) |
+
+> Add emulator screenshots of Search and Product Detail to `docs/screenshots/` when available.
 
 ## Features
 
-- Product catalog, detail, and search with type-ahead SQLite queries
+- Product catalog, detail, and **search with type-ahead** SQLite queries
 - Shopping cart and checkout flow
-- User registration, login, and session management
-- Purchase history and order tracking
-- Material Design layouts and navigation
+- User registration, login, session management
+- Purchase history
 
-## Tech stack
+## Stack
 
-- **Java** · Android SDK
-- **SQLite** via `DatabaseHelper`
-- **Gradle** build system
+- Java · Android SDK
+- SQLite (`DatabaseHelper`)
+- Material Design XML layouts
 
-## Screens implemented
+## Full source
 
-| Screen | Responsibility |
-|--------|----------------|
-| Product Detail | Product info, add to cart |
-| Search | Type-ahead product search |
-| Cart / Checkout | Cart management and checkout |
-| Home | Catalog browsing |
+Application source is maintained in the **`ShopEase`** repository (can be private for coursework; this portfolio repo is the public showcase).
 
-## Build & run
+## Build
 
-1. Open the project in **Android Studio** (Ladybug or newer recommended).
-2. Sync Gradle — do **not** commit `local.properties` (SDK path is machine-specific).
-3. Run on an emulator or device (API 24+).
-
-```bash
-./gradlew assembleDebug
-```
-
-## Project structure
-
-```
-app/src/main/java/com/shopease/app/
-  activities/    # Login, Home, Search, Cart, Checkout, etc.
-  adapters/      # RecyclerView adapters
-  database/      # SQLite helper
-  models/        # Product, Cart, Order, User
-app/src/main/res/
-  layout/        # XML layouts
-  drawable/      # Icons and product placeholders
-```
-
-## Note
-
-Sample product images use vector placeholders for coursework demonstration. Not connected to a live payment gateway.
+Open the full `ShopEase` project in Android Studio, sync Gradle, run on emulator or device. Do not commit `local.properties`.
 
 ## Author
 
-**Habib Khan** — King's Own Institute · [GitHub](https://github.com/hk204844-ui)
+**Habib Khan** · [GitHub](https://github.com/hk204844-ui)
