@@ -16,7 +16,7 @@
 |:---:|
 | ![ShopEase Android eCommerce app](docs/screenshots/app-overview.png) |
 
-> Add emulator screenshots of Search and Product Detail to `docs/screenshots/` when available.
+
 
 ## Features
 
